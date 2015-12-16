@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "(node_modules/.bin/nodemon -e js,jsx,json -w index.js -w app.js -w api -w config -w views -i src -- index.js)"
+    "start": "(node_modules/.bin/nodemon -e js,jsx,json -w index.js -w server -w config -w views -i client -- index.js)"
   },
   "author": "Stefan Hayden",
   "babel": {

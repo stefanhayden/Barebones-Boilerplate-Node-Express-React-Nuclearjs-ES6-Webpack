@@ -2,7 +2,7 @@
 import express from 'express';
 import nunjucks from 'nunjucks';
 import webpack from 'webpack';
-import webpackConfig from './webpack.config';
+import webpackConfig from '../webpack.config';
 
 const app = express();
 
@@ -18,11 +18,8 @@ app.use(require('webpack-dev-middleware')(compiler, { noInfo: true, publicPath: 
 app.use(require('webpack-hot-middleware')(compiler))
 
 
-app.get('/', function(req, res) {
-    res.render('index.html');
-});
 
-require('./api/routes')(app);
+require('./routes')(app);
 
 
 app.listen(3000);

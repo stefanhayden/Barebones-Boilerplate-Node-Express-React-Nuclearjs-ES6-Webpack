@@ -8,7 +8,7 @@ config = {
 	entry: {
 		app: [
 			"webpack-hot-middleware/client",
-			"./src/App.jsx",
+			"./client/app/App.jsx",
 		]
 	},
 	output: {
