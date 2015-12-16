@@ -14,6 +14,10 @@ export default React.createClass({
     };
   },
 
+	componentWillMount() {
+		actions.init();
+	},
+
   render() {
     let {clicks} = this.state;
     return (
@@ -23,5 +27,4 @@ export default React.createClass({
       </div>
     );
   },
-
 });

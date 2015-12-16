@@ -1,9 +1,10 @@
+require('babel-polyfill');
+
 import { render } from 'react-dom';
 import React from 'react';
 import reactor from './reactor';
 import ClickTracker from './modules/ClickTracker'
 
-require('babel-polyfill');
 
 const App = React.createClass({
   statics: {

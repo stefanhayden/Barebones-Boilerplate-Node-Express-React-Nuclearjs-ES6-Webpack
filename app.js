@@ -22,5 +22,7 @@ app.get('/', function(req, res) {
     res.render('index.html');
 });
 
+require('./api/routes')(app);
+
 
 app.listen(3000);
