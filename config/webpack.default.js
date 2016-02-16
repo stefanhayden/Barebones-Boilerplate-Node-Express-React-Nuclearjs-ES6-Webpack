@@ -22,9 +22,8 @@ config = {
 				test: /\.jsx?$/, 
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel',
-				//loaders: ['react-hot','babel'],
 				query: {
-        	presets: ['react', 'es2015']
+        			presets: ['react', 'es2015']
 				}
 			},
 			{ 
@@ -39,9 +38,9 @@ config = {
 		]
 	},
 	plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    		new webpack.optimize.OccurenceOrderPlugin(),
+    		new webpack.HotModuleReplacementPlugin(),
+    		new webpack.NoErrorsPlugin()
 	]
 };
 
